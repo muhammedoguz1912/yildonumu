@@ -1,0 +1,121 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header kısmı (Doğum Günü Kutlaması) */
+header {
+    background-color: #ff6699;
+    color: white;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Fotoğraf Galerisi */
+#photoGallery {
+    padding: 30px;
+    text-align: center;
+    background-color: #ffe6f7;
+}
+
+#photoGallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center; /* Resimleri ortalamak için */
+    justify-content: center;
+}
+
+.gallery img {
+    width: 400px; /* Yeni genişlik (daha büyük) */
+    height: auto; /* Yüksekliği otomatik olarak ayarla, oranları korur */
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Yıl Dönümü Sayacı */
+#countdownSection {
+    padding: 30px;
+    background-color: #ffccff;
+}
+
+#countdownSection h2 {
+    font-size: 2em;
+}
+
+/* Mesaj Kutusu */
+#messageContainer {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #ff66b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#messageContainer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff66b2;
+}
+
+#messageContainer p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Mesaj Göster Butonu */
+#messageButton {
+    display: none; /* Başlangıçta gizli */
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute; /* Ekranın ortasında yer alması için */
+    bottom: 10px; /* Sayfanın en altına yerleştir */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+}
+
+#messageButton:hover {
+    background-color: #ff3385;
+    transform: scale(1.1);
+}
+
+/* Zaman Sayacı */
+#countdown {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}

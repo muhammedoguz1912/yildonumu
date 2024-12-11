@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıl Dönümümüz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Doğum Günün Kutlu Olsun, Sevgilim!</h1>
+        <p>Bugün senin doğum günün, seni çoooooook seviyorum birtanem! Umarım daha nice doğum günlerinde birlikte oluruz güzel kızımmm<3</p>
+    </header>
+
+    <section id="photoGallery">
+        <h2>Fotoğraflarımız</h2>
+        <div class="gallery">
+            <img src="foto/IMG-20241211-WA0002.jpg" alt="Fotoğraf 1">
+            <img src="foto/IMG-20241211-WA0004.jpg" alt="Fotoğraf 2">
+            <img src="foto/IMG-20241211-WA0003.jpg" alt="Fotoğraf 3">
+            <img src="foto/IMG-20241211-WA0005.jpg" alt="Fotoğraf 4">
+            <img src="foto/WhatsApp Görsel 2024-12-11 saat 12.01.10_8a8cfc8a.jpg" alt="Fotoğraf 5">
+            <img src="foto/WhatsApp Görsel 2024-12-11 saat 12.02.09_2f186f39.jpg" alt="Fotoğraf 6">
+        </div>
+    </section>
+
+    <section id="countdownSection">
+        <h2>Yıl Dönümümüze Kalan Zaman</h2>
+        <p id="countdown"></p>
+    </section>
+
+    <!-- Mesaj Göster Butonu (Başlangıçta gizli) -->
+    <button id="messageButton" onclick="showMessage()">Mesajı Göster</button>
+
+    <!-- Mesaj Kutusu (Başlangıçta gizli) -->
+    <div id="messageContainer" style="display:none;">
+        <h3>Sevgilim,</h3>
+        <p id="messageText"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
